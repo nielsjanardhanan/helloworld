@@ -9,6 +9,7 @@ class Printer
     {
         $this->fname = $fname;
         $this->lname = $lname;
+        
     }
 
     public function greet()
