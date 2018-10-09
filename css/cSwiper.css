@@ -1,0 +1,13 @@
+.head-slider {
+    height: 500px;
+}
+
+.swiper-content {
+    text-align: center;
+}
+
+.swiper-content h1{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}

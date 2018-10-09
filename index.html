@@ -5,21 +5,73 @@ $printer = new Printer("Niels", "Janardhanan");
 
 ?>
 
-<head>
-    <title>Hello World</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="de">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <head>
+        <title>Hello World</title>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-    <div class="container">
-        <p><?= $printer->greet() ?></p>
-    </div>
-</body>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <!-- Body Stylings -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/icon.css">
+
+        <!-- Swiper -->
+        <link rel="stylesheet" href="libaries/swiper/css/swiper.min.css">
+        <script src="libaries/swiper/js/swiper.min.js"></script>
+        <link rel="stylesheet" href="css/cSwiper.css">
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <div class="header container-fluid">
+            <div class="swiper-container head-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-content">
+                        <img src="img/swiper/lion.jpg" alt="lion">
+                        <h1>Hello</h1>
+                    </div>
+                    <div class="swiper-slide swiper-content"><h1>My</h1></div>
+                    <div class="swiper-slide swiper-content"><h1>Friend</h1></div>
+                </div>
+                <div class="swiper-button-next swiper-button"></div>
+                <div class="swiper-button-prev swiper-button"></div>
+            </div>
+        </div>
+
+        <div class="main container">
+            <section>
+                <h1>About me</h1>
+                <ul class="icon-list">
+                    <li><i class="fab fa-github-alt"></i></li>
+                    <li><i class="fab fa-github-alt"></i></li>
+                    <li><i class="fab fa-github-alt"></i></li>
+                    <li><i class="fab fa-github-alt"></i></li>
+                </ul>
+            </section>
+            <section>
+                <h1>Output</h1>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </section>
+        </div>
+
+        <div class="footer container-fluid">
+
+        </div>
+
+        <script src="js/cSwiper.js"></script>
+
+    </body>
+
+</html>
